@@ -51,16 +51,14 @@ public class CashRegister {
     
     public void calcGrandTotal(){
             
-            System.out.println("Grand total:");
-            System.out.println();
-            receipt.getTotal();
+            receipt.getSavings();
             
     }
       
     
     public void finalizeSale(){
     
-        receipt.print();
+        receipt.printReceipt();
     
     };
     

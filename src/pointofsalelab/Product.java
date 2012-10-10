@@ -13,6 +13,8 @@ public class Product {
    private String productDesc;
    private double unitCost;
    
+   private double discountedPrice;
+   
    DiscountStrategy discount;
    
    public Product(String productId, String productDesc, 
@@ -20,8 +22,8 @@ public class Product {
        this.productID = productId;
        this.productDesc = productDesc;
        this.unitCost = unitCost;
-       
        this.discount = discount;
+       this.discountedPrice = this.discount.costAfterDiscount(this.unitCost);
    }
    
    public String getProdId(){
@@ -30,5 +32,13 @@ public class Product {
    
    public String getProductDesc(){
        return productDesc;
+   }
+   
+   public Double getUnitCost(){
+       return unitCost;
+   }
+   
+   public double getDiscountedPrice(){
+       return discountedPrice;
    }
 }

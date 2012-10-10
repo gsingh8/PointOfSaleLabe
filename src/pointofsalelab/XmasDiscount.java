@@ -12,8 +12,8 @@ public class XmasDiscount implements DiscountStrategy {
 
     private final double discount = .10;
     @Override
-    public double costAfterDiscount(double unitPrice, int qty) {
-        return unitPrice * qty * discount;
+    public double costAfterDiscount(double unitPrice) {
+        return unitPrice * discount;
     }
     
 }

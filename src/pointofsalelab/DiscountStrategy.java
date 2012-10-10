@@ -10,6 +10,6 @@ package pointofsalelab;
  */
 public interface DiscountStrategy {
     
-    public abstract double costAfterDiscount(double unitPrice, int qty);
+    public abstract double costAfterDiscount(double unitPrice);
     
 }

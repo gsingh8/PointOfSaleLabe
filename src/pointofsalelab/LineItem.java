@@ -28,7 +28,11 @@ public class LineItem {
     
     public double getPrice()
     {
-        
+        return product.getUnitCost();
     }
+    
+    public double discountedPrice(){
+        return product.getDiscountedPrice();
+     }
     
 }
